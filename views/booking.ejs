@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stay</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+
+        <h2>🏨 StayEase</h2>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Booking Form -->
+
+    <section class="booking">
+
+        <h2>Book Your Stay</h2>
+
+        <form action="/booking" method="POST">
+
+            <label>Full Name</label>
+            <input
+                type="text"
+                name="fullname"
+                placeholder="Enter your full name"
+                required>
+
+            <label>Email Address</label>
+            <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required>
+
+            <label>Phone Number</label>
+            <input
+                type="tel"
+                name="phone"
+                placeholder="Enter your phone number"
+                required>
+
+            <label>Number of Guests</label>
+            <input
+                type="number"
+                name="guests"
+                min="1"
+                placeholder="Enter number of guests"
+                required>
+
+            <label>Select Room</label>
+            <select name="room" required>
+
+                <option value="">Choose a Room</option>
+
+                <option>Deluxe Room</option>
+
+                <option>Premium Room</option>
+
+                <option>Suite Room</option>
+
+            </select>
+
+            <label>Check-In Date</label>
+            <input
+                type="date"
+                name="checkin"
+                required>
+
+            <label>Check-Out Date</label>
+            <input
+                type="date"
+                name="checkout"
+                required>
+
+            <button type="submit">
+
+                Confirm Booking
+
+            </button>
+
+        </form>
+
+    </section>
+
+</body>
+
+</html>
